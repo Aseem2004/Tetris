@@ -172,12 +172,12 @@ function pause(){
     if(timer){
         clearInterval(timer)
         timer = null;
-        btn.src = '/Resources/play.jpg'
+        btn.src = 'Resources/play.jpg'
     }
     else{
         draw()
         timer = setInterval(moveDown, 1000);
-        btn.src = '/Resources/pause.jpg'
+        btn.src = 'Resources/pause.jpg'
     }
 }
 startBtn.addEventListener("click" , pause)
